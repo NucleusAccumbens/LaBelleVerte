@@ -21,22 +21,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Добро пожаловать в зоопарк LaBelleVerte! Чтобы зоопарк начал работу, создайте животных, вальеры и приступайте к расслеоению. \n" +
+        System.out.println("Добро пожаловать в зоопарк LaBelleVerte! Чтобы зоопарк начал работу, создайте животных, вольеры и приступайте к расселению. \n" +
                 "Нажмите '1', чтобы получить информацию о видах, которые могут обитать в зоопарке. \n" +
                 "Нажмите '2', чтобы создать животноe. \n" +
                 "Нажмите '3' чтобы создать вольер. \n");
 
         Scanner in = new Scanner(System.in);
-        String startCommand = in.nextLine();
+        int startCommand = in.nextInt();
 
-        if (startCommand == "1") {
+        if (startCommand == 1) {
             System.out.println("В зоопарке могут проживать следующие виды животных: \n" +
-                    "" );
+                    KindsOfAnimals.Рысь.toString() + "\n" +
+                    KindsOfAnimals.Попугай.toString() + "\n" +
+                    KindsOfAnimals.Кенгуру.toString());
         }
-        else if (startCommand == "2") {
+        else if (startCommand == 2) {
 
         }
-        else  if (startCommand == "3") {
+        else  if (startCommand == 3) {
 
         }
         else System.out.println("Вы ввели неверную команду!");

@@ -5,5 +5,6 @@ public enum KindsOfAnimals {
     Тигр,
     Слон,
     Кенгуру,
-    Попугай
+    Попугай,
+    Рысь
 }
