@@ -6,11 +6,11 @@ import Abstractions.AAviary;
 import java.util.ArrayList;
 
 public class Zoo {
-    private ArrayList<Aviary> aviaries;
-    public ArrayList<Aviary> getAviaries() { return  aviaries; }
-    public void setAviaries(ArrayList<Aviary> aviaries) { this.aviaries = aviaries; }
+    private ArrayList<AAviary> aviaries;
+    public ArrayList<AAviary> getAviaries() { return  aviaries; }
+    public void setAviaries(ArrayList<AAviary> aviaries) { this.aviaries = aviaries; }
 
-    public Zoo(ArrayList<Aviary> aviaries) {
+    public Zoo(ArrayList<AAviary> aviaries) {
         this.aviaries = aviaries;
     }
 }
